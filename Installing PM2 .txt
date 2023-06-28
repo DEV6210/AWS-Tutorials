@@ -5,6 +5,10 @@ INSTALLING PM2 - Process manager to keep alive the node server after closing the
 npm install pm2 -g (install it globally)
 
 pm2 start npm -- start   (this will run the node app even if you close the terminal)
+or
+pm2 start <file_name> (Start the file using PM2)
+
+============================================================
 pm2 list (to check the running process)
 
 ============================================================
