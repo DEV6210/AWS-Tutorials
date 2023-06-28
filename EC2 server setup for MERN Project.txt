@@ -1,5 +1,3 @@
-# AWS sever machine set up for MERN project
-
 Create Ec2 Instance
 
 Connect with SSH terminal
