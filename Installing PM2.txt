@@ -8,6 +8,8 @@ pm2 start npm -- start   (this will run the node app even if you close the termi
 or
 pm2 start <file_name> (Start the file using PM2)
 
+---PM2 start with project name
+pm2 start server.js --name my-project
 ============================================================
 pm2 list (to check the running process)
 
