@@ -28,9 +28,8 @@ If command not found → install it (next step).
 
 Install Fail2Ban (if not installed)
 ```bash
-apt update
 apt install fail2ban -y
-```bash
+```
 Enable and start:
 ```bash
 systemctl enable fail2ban
