@@ -15,3 +15,9 @@ Restart:
 ```bash
 systemctl restart fail2ban
 ```
+
+Check ignore ip
+
+```bash
+fail2ban-client get sshd ignoreip
+```
