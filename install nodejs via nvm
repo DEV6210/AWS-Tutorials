@@ -1,16 +1,11 @@
 Install Node VIA NVM so that you can manage versions
 ============================================================
-```bash
+
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-```
-```bash
 source ~/.bashrc
-```
-```bash
 nvm ls-remote
-```
 nvm install v14.15.0 (use the Latest LTS -  version number)
-```bash nvm list ``` (check  available node versions)
+nvm list (check  available node versions)
 nvm use v14.15.0 (to select the default or any other NVM version)
 node --version (verify node version and node install)
 
