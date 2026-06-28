@@ -118,3 +118,17 @@ http://ezycore.cloud:5000
 ✅ This MUST work:
 
 https://ezycore.cloud
+
+
+see available config sites
+```
+ls -l /etc/nginx/sites-available/
+```
+see enable sites
+```
+ls -l /etc/nginx/sites-enabled/
+```
+delete sites
+```
+sudo rm -f /etc/nginx/sites-enabled/SITE_NAME
+```
