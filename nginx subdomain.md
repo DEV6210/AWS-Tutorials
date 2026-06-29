@@ -86,7 +86,6 @@ One important question:
 Is your Node.js backend listening on 127.0.0.1:5010 (localhost only) or 0.0.0.0:5010 (all interfaces)?
 
 If you're not sure, run:
-``
+```
 sudo ss -tulpn | grep 5010
 ```
-and share the output.
