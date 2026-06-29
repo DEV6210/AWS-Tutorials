@@ -132,3 +132,7 @@ delete sites
 ```
 sudo rm /etc/nginx/sites-available/file_name
 ```
+delete enable site
+```
+sudo rm -f /etc/nginx/sites-enabled/file_name
+```
