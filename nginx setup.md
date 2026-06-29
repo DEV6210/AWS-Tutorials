@@ -130,5 +130,5 @@ ls -l /etc/nginx/sites-enabled/
 ```
 delete sites
 ```
-sudo rm -f /etc/nginx/sites-enabled/SITE_NAME
+sudo rm /etc/nginx/sites-available/file_name
 ```
