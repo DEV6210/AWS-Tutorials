@@ -5,17 +5,20 @@ sudo nano /etc/nginx/sites-available/api.mywealthyfuturecsp.com
 Paste this:
 ```
 server {
-    listen 80;
-    server_name api.mywealthyfuturecsp.com;
+    server_name backend.mywealthyfuturecsp.com;
 
     location / {
-        proxy_pass http://127.0.0.1:5010;
+        # Pass the request to the Node.js application
+        proxy_pass http://localhost:5010;
 
+        # Standard proxy headers
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-
+        proxy_set_header Connection 'upgrade';
         proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+
+        # Pass real client IP and forward headers (crucial for logs and rate limiting)
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
