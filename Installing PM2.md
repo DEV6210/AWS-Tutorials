@@ -1,29 +1,24 @@
 INSTALLING PM2 - Process manager to keep alive the node server after closing the session also 
 -> https://pm2.keymetrics.io/docs/usage/quick-start/
 
-============================================================
+
 npm install pm2 -g (install it globally)
 
 pm2 start npm -- start   (this will run the node app even if you close the terminal)
 or
 pm2 start <file_name> (Start the file using PM2)
 
-#PM2 start with project name
+# PM2 start with project name
 ```
 pm2 start server.js --name my-project
 ```
-============================================================
+
 pm2 list (to check the running process)
 
-============================================================
 pm2 stop <PM2_ID> (Stop the process)
 
 example: pm2 stop 0
 
-============================================================
 pm2 delete <PM2_ID> (Delete the process)
 
 example: pm2 delete 0
-
-============================================================
-
